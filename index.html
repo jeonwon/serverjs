@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoBae Jeon</title>
+</head>
+<body>
+    <h1 id="bobae">보배 홈에 온것을 환영합니다.</h1>
+    <h2 id='bobo'>감사합니다 여러분~</h2>
+    <button id="close" onclick="closeNthank('none','block')">닫기</button>
+    <button id="hi" onclick="closeNthank('block','none')">인사</button>
+
+    <script> document.getElementById('bobo').style.fontSize='35px';
+            document.getElementById('hi').style.display='none';
+            function closeNthank(a,b){
+                document.getElementById('bobo').style.display=a;
+                document.getElementById('close').style.display=a;
+                document.getElementById('hi').style.display=b;
+                let but = document.querySelector('button');
+                console.log(but);
+            }</script>
+</body>
+</html>
