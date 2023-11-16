@@ -5,6 +5,10 @@ app.get("/bobae", function (req, res) {
   res.send("hello bobae world!");
 });
 
+app.get("/", function (req, res) {
+  res.send("<h1></h1>만드는 중입니다.<h1></h1>");
+});
+
 app.listen(3000, () => {
   console.log("connect on 3000");
 });
